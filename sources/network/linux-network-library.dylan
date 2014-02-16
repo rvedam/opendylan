@@ -110,7 +110,8 @@ define module unix-sockets
   export
     ntohl, ntohs, htonl, htons;
   export
-    inet-addr, inet-network, inet-makeaddr, inet-lnaof, inet-netof, inet-ntoa;
+    inet-addr, inet-network, inet-makeaddr, inet-lnaof, inet-netof, inet-ntoa, inet-aton,
+    inet-ntop, inet-pton;
 
   // From netdb.h
   export
@@ -166,7 +167,7 @@ define module unix-sockets
     endhostent, gethostbyaddr, gethostbyname, gethostent, sethostent,
     endnetent, getnetbyaddr, getnetbyname, getnetent, setnetent,
     endprotoent, getprotobynumber, getprotobyname, getprotoent, setprotoent,
-    endservent, getservbyport, getservbyname, getservent, setservent;
+    endservent, getservbyport, getservbyname, getservent, setservent, getaddrinfo;
   export
     gethostname;
   export
